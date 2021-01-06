@@ -10,6 +10,36 @@ public class sendingqueue {
 	private String content;
 	private String method;
 	private Integer id;
+	private String receiver;
+	
+	
+	private String status;
+	
+	
+	public sendingqueue() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public sendingqueue(String content, String method, Integer id, String receiver, String status) {
+		super();
+		this.content = content;
+		this.method = method;
+		this.id = id;
+		this.receiver = receiver;
+		this.status = status;
+	}
+	public String getReceiver() {
+		return receiver;
+	}
+	public void setReceiver(String receiver) {
+		this.receiver = receiver;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public String getcontent() {
 		return content;
 	}
@@ -31,15 +61,7 @@ public class sendingqueue {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public sendingqueue(String sentContent, String method, Integer id) {
-		super();
-		this.content = sentContent;
-		this.method = method;
-		this.id = id;
-	}
-	public sendingqueue() {
-		
-	}
+	
 	
 
 }
