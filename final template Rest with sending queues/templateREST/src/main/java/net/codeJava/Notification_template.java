@@ -9,3 +9,5 @@ public interface Notification_template extends JpaRepository<template, Integer> 
 	public template findBySubject (String subject);
 	 
 }
+
+
